@@ -23,12 +23,12 @@ def saveAs():
     try: #try except
         f.write(t.rstrip()) #Cuts off the whitespace underneath the text that we write into the file
     except:
-        showerror(title= 'Oops!', message = "Unable to save file..") #showerror is a function of tkinter
+        showerror(title= 'Oops!', message = "Unable to save file..") #showerror-> function of tkinter
 
 def openfile():
     f = askopenfile(mode = 'r') #read
     t = f.read()
-    text.delete(0.0, END) #get rid of all the text in the textbox
+    text.delete(0.0, END) #get rid of the text in the textbox
     text.insert(0.0, t)
 
 root= Tk()
